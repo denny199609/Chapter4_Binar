@@ -88,51 +88,56 @@ class MainActivity : AppCompatActivity() {
         if (cpu == 3) {
             comChoice = "batu";cardview6?.setCardBackgroundColor(Color.parseColor("#c3dae9"))
         }
-        if (myChoice == comChoice) {
-            tvTengah?.text = getString(R.string.hasilDraw);Log.d("Hasil Permainan:", "Draw");
-        } else if (myChoice == "gunting") {
-            when (comChoice) {
-                "kertas" -> {
-                    tvTengah?.text = getString(R.string.player1Menang);Log.d(
-                        "Hasil Permainan:",
-                        "Pemain 1 Menang"
-                    );tvTengah?.setBackgroundColor(Color.GREEN);
-                }
-                "batu" -> {
-                    tvTengah?.text = getString(R.string.player2Menang);Log.d(
-                        "Hasil Permainan:",
-                        "COM Menang"
-                    );tvTengah?.setBackgroundColor(Color.BLUE);
+        when (myChoice) {
+            comChoice -> {
+                tvTengah?.text = getString(R.string.hasilDraw);Log.d("Hasil Permainan:", "Draw");
+            }
+            "gunting" -> {
+                when (comChoice) {
+                    "kertas" -> {
+                        tvTengah?.text = getString(R.string.player1Menang);Log.d(
+                            "Hasil Permainan:",
+                            "Pemain 1 Menang"
+                        );tvTengah?.setBackgroundColor(Color.GREEN);
+                    }
+                    "batu" -> {
+                        tvTengah?.text = getString(R.string.player2Menang);Log.d(
+                            "Hasil Permainan:",
+                            "COM Menang"
+                        );tvTengah?.setBackgroundColor(Color.BLUE);
+                    }
                 }
             }
-        } else if (myChoice == "kertas") {
-            when (comChoice) {
-                "batu" -> {
-                    tvTengah?.text = getString(R.string.player1Menang);Log.d(
-                        "Hasil Permainan:",
-                        "Pemain 1 Menang"
-                    );tvTengah?.setBackgroundColor(Color.GREEN);
-                }
-                "gunting" -> {
-                    tvTengah?.text = getString(R.string.player2Menang);Log.d(
-                        "Hasil Permainan:",
-                        "COM Menang"
-                    );tvTengah?.setBackgroundColor(Color.BLUE);
+            "kertas" -> {
+                when (comChoice) {
+                    "batu" -> {
+                        tvTengah?.text = getString(R.string.player1Menang);Log.d(
+                            "Hasil Permainan:",
+                            "Pemain 1 Menang"
+                        );tvTengah?.setBackgroundColor(Color.GREEN);
+                    }
+                    "gunting" -> {
+                        tvTengah?.text = getString(R.string.player2Menang);Log.d(
+                            "Hasil Permainan:",
+                            "COM Menang"
+                        );tvTengah?.setBackgroundColor(Color.BLUE);
+                    }
                 }
             }
-        } else if (myChoice == "batu") {
-            when (comChoice) {
-                "gunting" -> {
-                    tvTengah?.text = getString(R.string.player1Menang);Log.d(
-                        "Hasil Permainan:",
-                        "Pemain 1 Menang"
-                    );tvTengah?.setBackgroundColor(Color.GREEN);
-                }
-                "kertas" -> {
-                    tvTengah?.text = getString(R.string.player2Menang);Log.d(
-                        "Hasil Permainan:",
-                        "COM Menang"
-                    );tvTengah?.setBackgroundColor(Color.BLUE);
+            "batu" -> {
+                when (comChoice) {
+                    "gunting" -> {
+                        tvTengah?.text = getString(R.string.player1Menang);Log.d(
+                            "Hasil Permainan:",
+                            "Pemain 1 Menang"
+                        );tvTengah?.setBackgroundColor(Color.GREEN);
+                    }
+                    "kertas" -> {
+                        tvTengah?.text = getString(R.string.player2Menang);Log.d(
+                            "Hasil Permainan:",
+                            "COM Menang"
+                        );tvTengah?.setBackgroundColor(Color.BLUE);
+                    }
                 }
             }
         }
