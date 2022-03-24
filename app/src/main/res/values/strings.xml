@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chapter4-Denny</string>
+    <string name="titleX">Kertas</string>
+    <string name="titleY">Gunting</string>
+    <string name="titleZ">Batu</string>
+<!--    -->
+    <string name="player1">Pemain 1</string>
+    <string name="player2">COM</string>
+<!--    -->
+    <string name="titlevs">VS</string>
+    <string name="player1Menang">Pemain 1\nMENANG!</string>
+    <string name="player2Menang">Pemain 2\nMENANG!</string>
+    <string name="hasilDraw">Draw!</string>
+</resources>
