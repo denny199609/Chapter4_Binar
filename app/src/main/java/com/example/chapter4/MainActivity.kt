@@ -6,17 +6,16 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast.*
 import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     private var myChoice: String = ""
     private var comChoice: String = ""
 
-    var cardview4: CardView? = null
-    var cardview5: CardView? = null
-    var cardview6: CardView? = null
-    var tvTengah: TextView? = null
+    private var cardview4: CardView? = null
+    private var cardview5: CardView? = null
+    private var cardview6: CardView? = null
+    private var tvTengah: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             cardview5?.setCardBackgroundColor(Color.TRANSPARENT)
             cardview6?.setCardBackgroundColor(Color.TRANSPARENT)
             tvTengah?.text = getString(R.string.titlevs)
-            tvTengah?.setBackgroundColor(Color.TRANSPARENT);
+            tvTengah?.setBackgroundColor(Color.TRANSPARENT)
         }
 
         fun retryButton(): Boolean {
@@ -77,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun hasil() {
+    private fun hasil() {
         val cpu = (1..3).random()
         if (cpu == 1) {
             comChoice = "gunting";cardview4?.setCardBackgroundColor(Color.parseColor("#c3dae9"))
@@ -90,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         }
         when (myChoice) {
             comChoice -> {
-                tvTengah?.text = getString(R.string.hasilDraw);Log.d("Hasil Permainan:", "Draw");
+                tvTengah?.text = getString(R.string.hasilDraw);Log.d("Hasil Permainan:", "Draw")
             }
             "gunting" -> {
                 when (comChoice) {
@@ -98,13 +97,13 @@ class MainActivity : AppCompatActivity() {
                         tvTengah?.text = getString(R.string.player1Menang);Log.d(
                             "Hasil Permainan:",
                             "Pemain 1 Menang"
-                        );tvTengah?.setBackgroundColor(Color.GREEN);
+                        );tvTengah?.setBackgroundColor(Color.GREEN)
                     }
                     "batu" -> {
                         tvTengah?.text = getString(R.string.player2Menang);Log.d(
                             "Hasil Permainan:",
                             "COM Menang"
-                        );tvTengah?.setBackgroundColor(Color.BLUE);
+                        );tvTengah?.setBackgroundColor(Color.BLUE)
                     }
                 }
             }
@@ -114,13 +113,13 @@ class MainActivity : AppCompatActivity() {
                         tvTengah?.text = getString(R.string.player1Menang);Log.d(
                             "Hasil Permainan:",
                             "Pemain 1 Menang"
-                        );tvTengah?.setBackgroundColor(Color.GREEN);
+                        );tvTengah?.setBackgroundColor(Color.GREEN)
                     }
                     "gunting" -> {
                         tvTengah?.text = getString(R.string.player2Menang);Log.d(
                             "Hasil Permainan:",
                             "COM Menang"
-                        );tvTengah?.setBackgroundColor(Color.BLUE);
+                        );tvTengah?.setBackgroundColor(Color.BLUE)
                     }
                 }
             }
@@ -130,13 +129,13 @@ class MainActivity : AppCompatActivity() {
                         tvTengah?.text = getString(R.string.player1Menang);Log.d(
                             "Hasil Permainan:",
                             "Pemain 1 Menang"
-                        );tvTengah?.setBackgroundColor(Color.GREEN);
+                        );tvTengah?.setBackgroundColor(Color.GREEN)
                     }
                     "kertas" -> {
                         tvTengah?.text = getString(R.string.player2Menang);Log.d(
                             "Hasil Permainan:",
                             "COM Menang"
-                        );tvTengah?.setBackgroundColor(Color.BLUE);
+                        );tvTengah?.setBackgroundColor(Color.BLUE)
                     }
                 }
             }

@@ -78,7 +78,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="autoSizeTextType" />
 
     <TextView
         android:id="@+id/tvPemain1"
@@ -107,7 +108,8 @@
             android:id="@+id/image1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_gunting" />
+            android:src="@drawable/ic_gunting"
+            tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -124,7 +126,8 @@
             android:id="@+id/image2"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_kertas" />
+            android:src="@drawable/ic_kertas"
+            tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -141,7 +144,8 @@
             android:id="@+id/image3"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_batu" />
+            android:src="@drawable/ic_batu"
+            tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
     <!--  COM  -->
     <TextView
@@ -171,7 +175,8 @@
             android:id="@+id/image4"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_gunting" />
+            android:src="@drawable/ic_gunting"
+            tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -188,7 +193,8 @@
             android:id="@+id/image5"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_kertas" />
+            android:src="@drawable/ic_kertas"
+            tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -205,7 +211,8 @@
             android:id="@+id/image6"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_batu" />
+            android:src="@drawable/ic_batu"
+            tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 
     <Button
