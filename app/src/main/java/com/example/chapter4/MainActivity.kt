@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         fun retryButton(): Boolean {
+            // ini bisa kamu replace jadi return if jadi tidak perlu membuat variable lagi 
             var flag = true
             if (cardview1.cardBackgroundColor.isOpaque || cardview2.cardBackgroundColor.isOpaque || cardview3.cardBackgroundColor.isOpaque) flag =
                 false
@@ -53,6 +54,8 @@ class MainActivity : AppCompatActivity() {
 
         cardview1.setOnClickListener {
             if (retryButton()) {
+                // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+                // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
                 backgroundT();cardview1.setCardBackgroundColor(Color.parseColor("#c3dae9"));myChoice =
                     "gunting";Log.d("Player Memilih:", "Gunting");hasil()
             }
@@ -60,6 +63,8 @@ class MainActivity : AppCompatActivity() {
 
         cardview2.setOnClickListener {
             if (retryButton()) {
+                // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+                // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
                 backgroundT();cardview2.setCardBackgroundColor(Color.parseColor("#c3dae9"));myChoice =
                     "kertas";Log.d("Player Memilih:", "Kertas");hasil()
             }
@@ -67,6 +72,8 @@ class MainActivity : AppCompatActivity() {
 
         cardview3.setOnClickListener {
             if (retryButton()) {
+                // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+                // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
                 backgroundT(); cardview3.setCardBackgroundColor(Color.parseColor("#c3dae9"));myChoice =
                     "batu";Log.d("Player Memilih:", "Batu");hasil()
             }
@@ -79,27 +86,42 @@ class MainActivity : AppCompatActivity() {
     private fun hasil() {
         val cpu = (1..3).random()
         if (cpu == 1) {
+            // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
             comChoice = "gunting";cardview4?.setCardBackgroundColor(Color.parseColor("#c3dae9"))
         }
         if (cpu == 2) {
+            // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
             comChoice = "kertas";cardview5?.setCardBackgroundColor(Color.parseColor("#c3dae9"))
         }
         if (cpu == 3) {
+            // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
             comChoice = "batu";cardview6?.setCardBackgroundColor(Color.parseColor("#c3dae9"))
         }
         when (myChoice) {
             comChoice -> {
+             // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                 tvTengah?.text = getString(R.string.hasilDraw);Log.d("Hasil Permainan:", "Draw")
             }
             "gunting" -> {
                 when (comChoice) {
                     "kertas" -> {
+                         // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                         tvTengah?.text = getString(R.string.player1Menang);Log.d(
                             "Hasil Permainan:",
                             "Pemain 1 Menang"
                         );tvTengah?.setBackgroundColor(Color.GREEN)
                     }
                     "batu" -> {
+                         // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                         tvTengah?.text = getString(R.string.player2Menang);Log.d(
                             "Hasil Permainan:",
                             "COM Menang"
@@ -110,12 +132,18 @@ class MainActivity : AppCompatActivity() {
             "kertas" -> {
                 when (comChoice) {
                     "batu" -> {
+                         // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                         tvTengah?.text = getString(R.string.player1Menang);Log.d(
                             "Hasil Permainan:",
                             "Pemain 1 Menang"
                         );tvTengah?.setBackgroundColor(Color.GREEN)
                     }
                     "gunting" -> {
+                         // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                         tvTengah?.text = getString(R.string.player2Menang);Log.d(
                             "Hasil Permainan:",
                             "COM Menang"
@@ -126,12 +154,18 @@ class MainActivity : AppCompatActivity() {
             "batu" -> {
                 when (comChoice) {
                     "gunting" -> {
+                         // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                         tvTengah?.text = getString(R.string.player1Menang);Log.d(
                             "Hasil Permainan:",
                             "Pemain 1 Menang"
                         );tvTengah?.setBackgroundColor(Color.GREEN)
                     }
                     "kertas" -> {
+                         // untuk hexa color tolong di taro di Res -> value -> color dan bisa manggil menggunakan resource.getColor(R.color.name_color) 
+            // dan untuk semi colon atau ; tidak usah di gunakan ya di kotlin 
+            // untuk pembuatan Log tolong di enter biar tidak menyatu
                         tvTengah?.text = getString(R.string.player2Menang);Log.d(
                             "Hasil Permainan:",
                             "COM Menang"
